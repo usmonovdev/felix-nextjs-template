@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,10 +16,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/pages/index.tsx</code>
-        </p>
+        <Link
+          href={"https://github.com/usmonovdev/felix-nextjs-template"}
+          className={`${styles.github}`}
+        >
+          <Image
+            src={"/images/github-mark.png"}
+            width={32}
+            height={32}
+            alt="Github"
+          />
+          <p>GitHub</p>
+        </Link>
+        <code>
+          npx degit usmonovdev/felix-nextjs-template {"<LOYIHA NOMI>"}
+        </code>
+        <p>"Felix ITS" - Frontend template</p>
       </main>
     </>
   );
