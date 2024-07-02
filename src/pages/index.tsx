@@ -31,7 +31,7 @@ export default function Home() {
         <code>
           npx degit usmonovdev/felix-nextjs-template {"<LOYIHA NOMI>"}
         </code>
-        <p>"Felix ITS" - Frontend template</p>
+        <p>{`"Felix ITS"`} - Frontend template</p>
       </main>
     </>
   );
